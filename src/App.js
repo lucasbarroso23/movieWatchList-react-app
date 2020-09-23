@@ -1,11 +1,34 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { Header } from './components/Header'
+import { Add } from './components/Add'
+import { Whatched } from './components/Whatched'
+import { Whatchlist } from './components/Whatchlist'
 import './App.css';
+import './lib/font-awesome/css/all.min.css'
 
 function App() {
   return (
-    <div className="App">
-      <h1>Movie WhatchList App</h1>
-    </div>
+    <Router>
+      <Header />
+
+      <Switch>
+        <Route exact path="/">
+          <Whatchlist />
+        </Route>
+
+        <Route exact path="/whatched" >
+          <Whatched />
+        </Route>
+
+        <Route exact path="/add">
+          <Add />
+        </Route>
+
+      </Switch>
+
+
+    </Router>
   );
 }
 
