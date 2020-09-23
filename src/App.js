@@ -17,11 +17,11 @@ function App() {
           <Whatchlist />
         </Route>
 
-        <Route exact path="/whatched" >
+        <Route path="/whatched" >
           <Whatched />
         </Route>
 
-        <Route exact path="/add">
+        <Route path="/add">
           <Add />
         </Route>
 
