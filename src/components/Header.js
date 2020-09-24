@@ -7,14 +7,14 @@ export const Header = () => {
             <div className="container">
                 <div className="inner-content">
                     <div className="brand">
-                        <Link to="/">WhathList</Link>
+                        <Link to="/">WathList</Link>
                     </div>
                     <ul className="nav-links">
                         <li>
-                            <Link to="/">Whatch List</Link>
+                            <Link to="/">Watch List</Link>
                         </li>
                         <li>
-                            <Link to="/Whatched">Whatched</Link>
+                            <Link to="/Whatched">Watched</Link>
                         </li>
                         <li>
                             <Link to="/add" className="btn">+ Add</Link>
