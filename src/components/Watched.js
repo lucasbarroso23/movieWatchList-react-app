@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { GlobalContext } from '../context/GlobalState';
 import { MovieCard } from './MovieCard';
-import { Watchlist } from './Watchlist';
+
 
 export const Watched = () => {
     const { watched } = useContext(GlobalContext);
